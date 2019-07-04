@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ h2{
+        text-align: center;
+
+    }
+    p{
+        text-align: center;
+    }
+    body{
+        background-color: #fbd5ff;
+    }
+</style>
+</head>
+<body>
+<div class="div.container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+                  <form method="post">
+          {% csrf_token %}
+                      <center><h1>Feedback Form</h1></center>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="work_rating">Work_Rating</label>
+        <input type="number" id="work_rating" name="work_rating" placeholder="Your work_rating.."><br>
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:170px"></textarea>
+        <center>
+        <input type="submit" value="Submit" class="btn btn-success">
+        <input type="reset" value="clear" class="btn btn-danger">
+        </center>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

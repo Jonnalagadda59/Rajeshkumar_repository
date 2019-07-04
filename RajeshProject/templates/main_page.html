@@ -1,0 +1,73 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Base Pase</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+<style>
+    #ul1{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: aqua;
+        margin-top: auto;
+
+
+    }
+    li a{
+        float: left;
+    }
+    li a {
+        float: left;
+        display:ruby-base-container;
+        color: royalblue;
+        text-align: center;
+        padding:15px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        margin-top:auto;
+    }
+    .active{
+        background-color: blue;
+
+    }
+
+    .footer{
+
+        margin-top: 400px;
+        background-color: skyblue;
+        color: royalblue;
+        text-align: center;
+    }
+    #h11{
+        font-family: "Arial Black";
+        font-size: 50px;
+        text-shadow: 5px 5px 5px white;
+        margin-top:auto;
+    }
+    body{
+        background-color: lightskyblue;
+    }
+
+
+</style>
+<body>
+<center><h1 id="h11" style="color:blue">Rajesh Kumar Billa Information</h1></center>
+<ul id="ul1">
+    <li><b><a href="/home/">Home</a></b></li>
+    <li><b><a href="/contact/">Contact</a></b></li>
+    <li><b><a href="/feedback/">Feedback</a></b></li>
+    <li><b><a href="/about/">About Me</a></b></li>
+
+</ul>
+ <footer class="footer">
+    <marquee><h2>Welcome to my new Portal</h2></marquee>
+</footer>
+</body>
+</html>
